@@ -12,27 +12,25 @@
       background-color: #f9fafb;
       color: #1f2937;
     }
-    header {
-      background-color: #1e3a8a;
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1581093588401-3e09c0f63c0c?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 5rem 1rem;
     }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
-    header p {
-      font-size: 1.125rem;
-    }
-    main {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    section {
+
+    .hero p {
+      font-size: 1.25rem;
       margin-bottom: 2rem;
     }
+
     .btn {
       display: inline-block;
       background-color: #2563eb;
@@ -42,7 +40,31 @@
       border-radius: 0.5rem;
       font-weight: 600;
       margin-top: 1rem;
+      transition: background-color 0.3s ease;
     }
+
+    .btn:hover {
+      background-color: #1e40af;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      color: #1e3a8a;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
@@ -52,9 +74,10 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>ERPNext Implementation in Jamaica</h1>
-    <p>Streamline Payroll, Sales, Inventory, and Accounting — All in One System</p>
+  <header class="hero">
+    <h1>Nexxt Tech Solutions</h1>
+    <p>Streamline Payroll, Sales, Inventory, and Accounting — All in One System with ERPNext</p>
+    <a href="mailto:yourname@yourcompany.com" class="btn">Book a Free Consultation</a>
   </header>
 
   <main>
@@ -114,7 +137,7 @@
   </main>
 
   <footer>
-    © 2025 Your Company Name. All Rights Reserved.
+    © 2025 Nexxt Tech Solutions. All Rights Reserved.
   </footer>
 </body>
 </html>
