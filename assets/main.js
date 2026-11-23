@@ -20,4 +20,24 @@
 
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+
+  const enquiry = document.getElementById("project-enquiry");
+
+  if (typeof enquiry?.showModal === "function") {
+    document.querySelectorAll("[data-enquiry-open]").forEach((trigger) => {
+      trigger.hidden = false;
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        enquiry.showModal();
+      });
+    });
+
+    enquiry.querySelector(".enquiry-close").addEventListener("click", () => {
+      enquiry.close();
+    });
+
+    enquiry.addEventListener("click", (event) => {
+      if (event.target === enquiry) enquiry.close();
+    });
+  }
 })();
